@@ -7,9 +7,11 @@ using System.Text.Json.Serialization;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddSwaggerGen();
+
 builder.Services.AddControllersWithViews()
     .AddJsonOptions(options => 
         options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
+
 builder.Services.AddRazorPages();
 
 builder.Services.AddAutoMapper(typeof(AutomapperProfiles));
@@ -26,10 +28,7 @@ var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
-    app.UseSwaggerUI(c =>
-    {
-        c.SwaggerEndpoint("/swagger/v1/swagger.json", "Blazor API V1");
-    });
+    app.UseSwaggerUI();
     app.UseWebAssemblyDebugging();
 }
 else

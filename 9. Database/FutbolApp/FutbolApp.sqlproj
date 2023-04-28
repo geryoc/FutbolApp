@@ -75,6 +75,6 @@
     <PostDeploy Include="Scripts\PostDeployment\Script.PostDeployment.sql" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="PublishProfiles\FutbolApp.LocalDEV.publish.xml" />
+    <None Include="PublishProfiles\FutbolApp.Local.publish.xml" />
   </ItemGroup>
 </Project>
