@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Services\Tournaments\Handlers\" />
+    <Folder Include="Services\Tournaments\Requests\" />
+    <Folder Include="Services\Tournaments\Responses\" />
+    <Folder Include="Shared\Constants\" />
+    <Folder Include="Domain\Entities\" />
+    <Folder Include="Domain\EntitiesLogic\" />
+    <Folder Include="Domain\ExternalEntities\" />
+    <Folder Include="Domain\Enums\" />
+    <Folder Include="Services\Countries\Responses\" />
+    <Folder Include="Shared\Exceptions\" />
+    <Folder Include="Shared\Utilities\HtmlToPdf\" />
+    <Folder Include="Shared\Utilities\Email\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="Mapster" Version="7.3.0" />
+    <PackageReference Include="MediatR" Version="12.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+</Project>

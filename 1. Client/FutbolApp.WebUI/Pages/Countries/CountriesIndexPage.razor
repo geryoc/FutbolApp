@@ -1,0 +1,30 @@
+﻿@*@page "/countries"
+
+@    using Blazorise.DataGrid
+@    using FutbolApp.Domain.Models.Countries.Resources
+@    using FutbolApp.WebUI.ViewModels.Countries
+
+<h3> Countries </h3>
+
+<DataGrid TItem="CountryResource"
+          Data="@model.Data"
+          ReadData="@OnReadData"
+          TotalItems="@totalItems"
+          PageSize="@pageSize"
+          ShowPager
+          Responsive>
+    <DataGridCommandColumn />
+    <DataGridColumn Field="@nameof(CountryResource.Id)" Caption="#" Sortable="false" />
+    <DataGridColumn Field="@nameof(CountryResource.Name)" Caption="First Name" />
+</DataGrid>
+
+@code {
+    private CountriesIndexModel model;
+
+    protected override async Task OnInitializedAsync()
+    {
+        employeeList = await EmployeeData.GetDataAsync();
+        await base.OnInitializedAsync();
+    }
+}
+*@
