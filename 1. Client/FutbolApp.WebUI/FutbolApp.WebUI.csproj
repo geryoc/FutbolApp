@@ -4,20 +4,17 @@
     <TargetFramework>net6.0</TargetFramework>
     <Nullable>disable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <Configurations>Debug;Release;Start</Configurations>
   </PropertyGroup>
 
   <ItemGroup>
     <Compile Remove="Articles\**" />
-    <Compile Remove="Models\**" />
     <Compile Remove="Services\**" />
     <Content Remove="Articles\**" />
-    <Content Remove="Models\**" />
     <Content Remove="Services\**" />
     <EmbeddedResource Remove="Articles\**" />
-    <EmbeddedResource Remove="Models\**" />
     <EmbeddedResource Remove="Services\**" />
     <None Remove="Articles\**" />
-    <None Remove="Models\**" />
     <None Remove="Services\**" />
   </ItemGroup>
 
@@ -28,6 +25,10 @@
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="6.0.8" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="6.0.8" PrivateAssets="all" />
     <PackageReference Include="Radzen.Blazor" Version="4.9.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Models\Entities\" />
   </ItemGroup>
 
 </Project>

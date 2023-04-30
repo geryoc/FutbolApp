@@ -11,7 +11,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Core", "3. Core", "{CC0C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FutbolApp.WebUI", "1. Client\FutbolApp.WebUI\FutbolApp.WebUI.csproj", "{D9E403E4-6EF8-49F1-8FB9-6EBDF70994F9}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FutbolApp.Api", "2. Server\FutbolApp.WebApi\FutbolApp.Api.csproj", "{6A6F8858-7713-48B7-B116-A53C26462366}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FutbolApp.WebApi", "2. Server\FutbolApp.WebApi\FutbolApp.WebApi.csproj", "{6A6F8858-7713-48B7-B116-A53C26462366}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FutbolApp.Core", "3. Domain\FutbolApp.Domain\FutbolApp.Core.csproj", "{C1A83D5D-463F-4F48-9627-05259A9C4518}"
 EndProject

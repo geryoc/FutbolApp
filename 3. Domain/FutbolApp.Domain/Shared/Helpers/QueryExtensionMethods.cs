@@ -5,7 +5,7 @@ namespace FutbolApp.Core.Shared.Helpers;
 
 public static class QueryExtensionMethods
 {
-    public static PageResponse<T> ToPageResource<T>(this PageRequest request, ICollection<T> items, int totalItems)
+    public static PageResponse<T> ToPageResource<T>(this PageQuery request, ICollection<T> items, int totalItems)
     {
         return new PageResponse<T>
         {

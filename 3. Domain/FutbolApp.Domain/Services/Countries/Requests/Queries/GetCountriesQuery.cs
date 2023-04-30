@@ -4,9 +4,9 @@ using FutbolApp.Core.Shared.Responses;
 using MediatR;
 using System.Text.Json.Serialization;
 
-namespace FutbolApp.Core.Services.Countries.Requests;
+namespace FutbolApp.Core.Services.Countries.Requests.Queries;
 
-public class GetCountriesRequest : PageRequest, IRequest<PageResponse<CountryModel>>
+public class GetCountriesQuery : PageQuery, IRequest<PageResponse<CountryModel>>
 {
     public string Name { get; set; }
     public ICollection<CountryIncludes> Include { get; set; }

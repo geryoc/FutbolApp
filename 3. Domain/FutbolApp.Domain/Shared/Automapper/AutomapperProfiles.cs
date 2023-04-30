@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using FutbolApp.Core.Domain.Entities;
 using FutbolApp.Core.Models;
+using FutbolApp.Core.Services.Countries.Requests.Commands;
 
 namespace FutbolApp.Core.Shared.Automapper;
 
@@ -12,6 +13,8 @@ public class AutomapperProfiles : Profile
         CreateMap<Tournament, TournamentModel>();
         CreateMap<Country, CountryModel>();
 
-        // Requests To Entities
+        // Commands To Entities
+        CreateMap<CreateCountryCommand, Country>();
+        CreateMap<UpdateCountryCommand, Country>();
     }
 }
